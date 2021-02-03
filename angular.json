@@ -116,8 +116,13 @@
               "devServerTarget": "user-registration-client:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "user-registration-client"
 }
