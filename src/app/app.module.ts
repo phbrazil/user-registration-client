@@ -8,18 +8,28 @@ import { SearchDeleteComponent } from './search-delete/search-delete.component';
 import { UserRegistationService } from './user-registation.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgxMaskModule, IConfig } from 'ngx-mask';
+
+const maskConfig: Partial<IConfig> = {
+  validation: false,
+};
+
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistrationComponent,
-    SearchDeleteComponent
+    SearchDeleteComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    NgxMaskModule.forRoot(maskConfig),
   ],
   providers: [UserRegistationService],
   bootstrap: [AppComponent]

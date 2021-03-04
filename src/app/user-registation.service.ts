@@ -10,11 +10,11 @@ export class UserRegistationService {
 
 
   public doRegistration(user){
-    return this.http.post("http://localhost:9090/register",user,{responseType:'text' as 'json'});
+    return this.http.post("http://www.cyberoficina.com.br:8080/sistema-vendas/registerClient",user,{responseType:'text' as 'json'});
   }
 
   public getUsers(){
-    return this.http.get("http://localhost:9090/getAllUsers");
+    return this.http.get("http://www.cyberoficina.com.br:8080/sistema-vendas/getAllClients");
   }
 
   public getUserByEmail(email){

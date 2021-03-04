@@ -30,8 +30,8 @@
                         <th>Nome</th>
                         <th>Email</th>
                         <th>City</th>
-                        <th>Experiência</th>
-                        <th>Domínio</th>
+                        <th>CPF</th>
+                        <th>Data Cadastro</th>
                         <th>Ação</th>
                     </tr>
                 </thead>
@@ -41,8 +41,8 @@
                         <td>{{user.name}}</td>
                         <td>{{user.email}}</td>
                         <td>{{user.city}}</td>
-                        <td>{{user.experience}}</td>
-                        <td>{{user.domain}}</td>
+                        <td>{{user.cpf}}</td>
+                        <td>{{user.dataCadastro}}</td>
                         <td class="text-center"><button class="btn btn-danger btn-xs" (click)="deleteUser(user.id)"><span class="glyphicon glyphicon-remove"></span> Deletar</button></td>
                     </tr>
                 </tbody>

@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  API: 'http://localhost:9090/',
-  BASE_URL: '/api'
+  //API: 'http://www.cyberoficina.com.br:8080/sistema-vendas/registerClient',
+ // BASE_URL: '/api'
 };
 
 /*
