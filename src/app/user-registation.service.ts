@@ -15,17 +15,23 @@ export class UserRegistationService {
   }
 
   public getUsers(){
-    return this.http.get("http://localhost:8080/sistema-vendas/getAllClients");
-    //return this.http.get("http://www.cyberoficina.com.br:8080/sistema-vendas/getAllClients");
+    return this.http.get("http://www.cyberoficina.com.br:8080/sistema-vendas/getAllClients");
+    //return this.http.get("http://localhost:8080/sistema-vendas/getAllClients");
   }
 
-  public getUserByEmail(email){
-    return this.http.get("http://localhost:9090/findUser/"+email);
+  public getClientByEmail(email){
+    return this.http.get("http://www.cyberoficina.com.br:8080/sistema-vendas/findClient/"+email);
+    //return this.http.get("http://localhost:8080/sistema-vendas/findClient/"+email);
   }
+
+  public getClientByCpf(cpf){
+    return this.http.get("http://www.cyberoficina.com.br:8080/sistema-vendas/findClientCPF/"+cpf);
+  }
+
 
   public deleteUser(id){
-    return this.http.delete("http://localhost:8080/sistema-vendas/deleteClient/"+id);
+    //return this.http.delete("http://localhost:8080/sistema-vendas/deleteClient/"+id);
 
-    //return this.http.delete("http://www.cyberoficina.com.br:8080/sistema-vendas/id="+id);
+    return this.http.delete("http://www.cyberoficina.com.br:8080/sistema-vendas/deleteClient/"+id);
   }
 }

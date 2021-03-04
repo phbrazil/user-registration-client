@@ -20,7 +20,7 @@ public deleteUser(id:number){
 }
 
 public findUserByEmailId(){
-  let resp= this.service.getUserByEmail(this.email);
+  let resp= this.service.getClientByEmail(this.email);
   resp.subscribe((data)=>this.users=data);
  }
 
